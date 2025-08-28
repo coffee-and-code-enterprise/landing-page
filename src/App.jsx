@@ -5,10 +5,10 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 // import Header from './components/Header.jsx'
 
 // Pages
-import Home from './pages/Home.jsx'
-import About from './pages/About.jsx'
-import Contact from './pages/Contact.jsx'
-import Projects from './pages/Projects.jsx'
+import Home from './pages/Home/Home.jsx'
+import About from './pages/About/About.jsx'
+import Contact from './pages/Contact/Contact.jsx'
+import Projects from './pages/Projects/Projects.jsx'
 
 // Styles
 import './App.css'
@@ -38,7 +38,7 @@ function App() {
       </Routes>
 
       {/* Footer */}
-      <footer><h1>Footer</h1></footer>
+      <footer><h2>Footer</h2></footer>
     </BrowserRouter>
 
   );
