@@ -1,8 +1,11 @@
 function Projects() {
 
   return (
-    <main>
-      <h1>Projects</h1>
+    <main id="projects-main">
+      <section className="hero">
+        
+      </section>
+      <h2>Projects</h2>
     </main>
   )
 }
