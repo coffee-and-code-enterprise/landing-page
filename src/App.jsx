@@ -1,8 +1,10 @@
 // Dependencies
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Components
 // import Header from './components/Header.jsx'
+import Navbar from './components/Navbar.jsx'
+import Footer from './components/Footer.jsx'
 
 // Pages
 import Home from './pages/Home/Home.jsx'
@@ -19,15 +21,8 @@ function App() {
 
   return (
     <BrowserRouter>
-      {/* Header */}
-      <header>
-        <nav>
-          <Link to="/">Home</Link> |{" "}
-          <Link to="/about">About</Link> |{" "}
-          <Link to="/contact">Contact</Link> |{" "}
-          <Link to="/projects">Projects</Link>
-        </nav>
-      </header>
+      {/* Navbar */}
+      <Navbar />
 
       {/* Routes */}
       <Routes>
@@ -38,7 +33,7 @@ function App() {
       </Routes>
 
       {/* Footer */}
-      <footer><h2>Footer</h2></footer>
+      <Footer />
     </BrowserRouter>
 
   );
