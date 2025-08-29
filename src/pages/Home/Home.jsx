@@ -15,6 +15,14 @@ function Home() {
         <div class="scroll-down">⌄</div>
         
       </section>
+      <section class="main">
+        <div class="main-content">
+          <br /> 
+        <h2>TECNOLOGIA QUE FUNCIONA, <span>EXPERIÊNCIA QUE ENCANTA</span> </h2>
+        </div>
+        <div class="main-content"><p><span>Na Coffee & Code, </span> aliamos a lógica do desenvolvimento com o calor humano de uma boa conversa. Criamos sistemas, sites e soluções digitais sob medida, com foco em desempenho, usabilidade e simplicidade.</p>
+        </div>
+      </section>
     </main>
   )
 }

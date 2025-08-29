@@ -22,47 +22,17 @@
       position: relative;
     }
 
-    /* Navbar */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 60px;
-      background: rgba(0, 0, 0, 0.4);
-    }
-
-    .navbar img {
-      width: 50px;
-    }
-
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      gap: 30px;
-    }
-
-    .navbar ul li a {
-      text-decoration: none;
-      color: #fff;
-      font-size: 16px;
-      transition: color 0.3s;
-    }
-
-    .navbar ul li a:hover {
-      color: #ffcc00;
-    }
-
     /* Texto central */
     .hero-content {
       text-align: center;
       max-width: 900px;
       margin: auto;
-      font-size: 26px;
-      font-weight: bold;
+      font-size: 24px;
+      font-weight: medium;
     }
 
     .hero-content span {
-      color: #5b5bff; /* azul destacado */
+      color: #34337c; /* azul destacado */
     }
 
     /* Seta */
@@ -76,4 +46,17 @@
     @keyframes bounce {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(10px); }
+    }
+
+    .main-content span {
+        color: #34337c;
+    }
+
+    .main-content {
+        text-align: center;
+    }
+    
+    .main {
+        background-color: #100b1e;
+        height: 70vh;
     }
