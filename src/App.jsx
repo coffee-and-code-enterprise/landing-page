@@ -14,6 +14,7 @@ import Projects from './pages/Projects/Projects.jsx'
 
 // Styles
 import './App.css'
+import './assets/css/responsive.css'
 
 
 
@@ -35,7 +36,6 @@ function App() {
       {/* Footer */}
       <Footer />
     </BrowserRouter>
-
   );
 }
 

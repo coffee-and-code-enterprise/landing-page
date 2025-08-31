@@ -8,7 +8,7 @@ function Footer() {
         <div className="footer-container">
           <div className="footer-about">
             <Link to="/" className="footer-logo">
-              TechSolutions
+              Coffee&Code
             </Link>
             <p>
               Especialistas em desenvolvimento web, criando soluções digitais
@@ -53,7 +53,7 @@ function Footer() {
 
         <div className="copyright">
           <p>
-            &copy; {new Date().getFullYear()} TechSolutions. Todos os direitos
+            &copy; {new Date().getFullYear()} Coffee&Code. Todos os direitos
             reservados.
           </p>
         </div>

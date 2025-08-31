@@ -1,0 +1,53 @@
+.section {
+	padding: 5rem 0;
+}
+
+.section-title {
+	text-align: center;
+	font-size: 2.5rem;
+	margin-bottom: 3rem;
+	color: var(--dark-blue);
+}
+
+.about-content {
+	display: flex;
+	gap: 3rem;
+	align-items: center;
+}
+
+.about-text {
+	flex: 1;
+}
+
+.about-image {
+	flex: 1;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.mission-vision {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2rem;
+	margin-top: 3rem;
+}
+
+.card {
+	background-color: white;
+	border-radius: 8px;
+	padding: 2rem;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	color: var(--primary-blue);
+}

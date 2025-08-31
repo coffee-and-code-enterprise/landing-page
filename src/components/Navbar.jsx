@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
 
@@ -10,7 +10,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="container navbar-container">
         <Link to="/" className="logo">
-          Coffee and Code
+          Coffee&Code
         </Link>
 
         <div
