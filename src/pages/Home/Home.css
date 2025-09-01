@@ -36,52 +36,100 @@
 }
 
 .hero-title span {
- color: #34337c;
-    
+  color: #34337c;
+
 
 }
 
 /* Seta */
-    .scroll-down {
-      font-size: 60px;
-      animation: bounce 1.5s infinite;
-      color: #fdf8e4;
-      position: absolute;
-      bottom: 0;
-      margin-left: 700px;
-    }
+.scroll-down {
+  font-size: 60px;
+  animation: bounce 1.5s infinite;
+  color: #fdf8e4;
+  position: absolute;
+  bottom: 0;
+  margin-left: 700px;
+}
 
-    .main-content span {
-        color: #34337c;
-    }
+@keyframes bounce {
 
-    .main-content {
-      display: flex;
-      justify-content: center;
-      text-align: center;
+  0%,
+  100% {
+    transform: translateY(0);
+  }
 
-    }
-    
-    .main-home {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-        background-color: #100b1e;
-        height: 70vh;
-    }
+  50% {
+    transform: translateY(10px);
+  }
+}
 
-    h2 {
-      color: #fdf8e4;
-    }
-    
-    p {
-      color: #fdf8e4;
-      font-size: 18px;
-    }
+.main-content span {
+  color: #34337c;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 900px;
+
+}
+
+.main-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #100b1e;
+  height: 70vh;
+}
+
+h2 {
+  color: #fdf8e4;
+}
+
+p {
+  color: #fdf8e4;
+  font-size: 24px;
+}
+
+.code-home {
+  background-color: #5C5988;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+
+.code-title {
+  margin-left: 200px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.code-title span {
+  color: #100B1E;
+}
+
+.code-text {
+  width: 400px;
+  margin-left: 200px;
+}
+
+#humor {
+  width: 45%;
+}
+
+.humor {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 200px;
+}
+
+.team-home {
+  background-color: #100b1e;
+  height: 70vh;
+}
 
 
-
-
-    
 
