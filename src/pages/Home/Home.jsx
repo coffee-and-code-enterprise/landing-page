@@ -47,7 +47,7 @@ function Home() {
           <h3>Emanuel</h3> </div>
           <div><img class="team-images" src="/imgs/home/vini.png" alt="" />
           <h3>Vinícius</h3> </div>
-          <div><img class="team-images" src="/imgs/home/cazé.png" alt="" />
+          <div><img class="team-images" src="/imgs/home/caze.png" alt="" />
           <h3>Gustavo</h3> </div> </div>
         
       </section>
