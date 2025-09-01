@@ -1,7 +1,6 @@
 #contact{
-	background-color: #210f4b;
+	background-color: #F3F4F6;
 }
-
 .contact-container {
 	display: flex;
 	gap: 3rem;
@@ -13,7 +12,6 @@
 	padding: 30px;
 	display: flex;
 	justify-content: center;
-	color: #FDF8E4
 }
 
 .contact-form {
@@ -52,4 +50,8 @@
 	margin-right: 1rem;
 	color: #FDF8E4;
 	font-size: 1.5rem;
+}
+
+.cta-button{
+	background-color: darkblue;
 }

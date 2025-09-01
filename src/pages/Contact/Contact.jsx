@@ -79,7 +79,7 @@
               <button
                 type="submit"
                 className="cta-button"
-                style={{ width: "100%" }}>
+                style={{ width: "100%"}}>
                 Enviar Mensagem
               </button>
             </form>
