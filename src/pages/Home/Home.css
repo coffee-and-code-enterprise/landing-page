@@ -19,22 +19,6 @@
   margin: 0 auto 2rem;
 }
 
-.cta-button {
-  display: inline-block;
-  background-color: #49A651;
-  color: white;
-  padding: 0.8rem 2rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-  width: 9%;
-  height: 5%;
-}
-
 .hero-title span {
   color: #34337c;
 
@@ -48,7 +32,7 @@
   color: #fdf8e4;
   position: absolute;
   bottom: 0;
-  margin-left: 700px;
+  margin-left: 500px;
 }
 
 @keyframes bounce {
@@ -128,16 +112,74 @@
 
 .team-home {
   background-color: #100b1e;
-  height: 70vh;
+  height: 60vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .team-title span {
   color: #7661FA;
 }
 .team-title {
+  margin-top: 50px;
+  margin-left: 600px;
+}
+
+.team-images {
+  width: 200px;
+  border-radius: 40%;
+}
+
+h3 {
+  color: #fdf8e4;
+  font-size: 30px;
+}
+
+.team-names {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact-home {
+  background-color: #5C5988;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-text {
+  width: 500px;
+  text-align: center;
   margin-top: 70px;
+}
+
+.contact-text span {
+  color: #F2E1A2;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: #49A651;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  color: #49A651;
+  background-color: #100b1e;
+}
+
+#text {
+  font-size: 30px;
 }
 
 
