@@ -33,7 +33,7 @@ function Home() {
 
         </div>
         <div class="humor">
-            <img id="humor" src="public/imgs/home imgs/humor_e_piadas.png" alt="" />
+            <img id="humor" src="public/imgs/home/humor_e_piadas.png" alt="" />
           </div>
       </section>
       <section class="team-home">
@@ -41,7 +41,7 @@ function Home() {
           <h2 class="team-title">CONHEÇA A NOSSA <span>EQUIPE</span></h2>
         </div>
         <div>
-          <img src="" alt="" />
+          <img src="public/imgs/gui" alt="" />
           <img src="" alt="" />
           <img src="" alt="" />
           <img src="" alt="" />
