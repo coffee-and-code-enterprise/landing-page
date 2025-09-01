@@ -129,7 +129,17 @@ p {
 .team-home {
   background-color: #100b1e;
   height: 70vh;
+  display: flex;
+  justify-content: center;
 }
+
+.team-title span {
+  color: #7661FA;
+}
+.team-title {
+  margin-top: 70px;
+}
+
 
 
 
