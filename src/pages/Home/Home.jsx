@@ -4,22 +4,44 @@ import "./Home.css";
 
 function Home() {
   return (
-    <section id="home" className="hero">
-      <div className="container">
-        <h1 className="hero-title">DESENVOLVEMOS SOLUÇÕES SOB MEDIDA, COM A 
-          <span> EFICIÊNCIA DO CÓDIGO </span> 
-          E O CONFORTO DE UMA BOA XÍCARA DE CAFÉ</h1>
-        <p className="hero-subtitle">
-          Desenvolvemos aplicações web de alta performance que impulsionam seu
-          negócio. Combinamos design inovador com tecnologia de ponta para criar
-          experiências digitais excepcionais.
-        </p>
-        
-      </div>
-      <Link to="/contact" className="cta-button">
-          Contatar
-        </Link>
-    </section>
+    <main className="main-container">
+      <section id="home" className="hero">
+        <div className="container">
+          <h1 className="hero-title">DESENVOLVEMOS SOLUÇÕES SOB MEDIDA, COM A
+            <span> EFICIÊNCIA DO CÓDIGO </span>
+            E O CONFORTO DE UMA BOA XÍCARA DE CAFÉ</h1>
+          <div class="scroll-down">⌄</div>
+        </div>
+
+      </section>
+      <section class="main-home">
+        <div class="main-content">
+          <br />
+          <h2>TECNOLOGIA QUE FUNCIONA, <span>EXPERIÊNCIA QUE ENCANTA</span> </h2>
+        </div>
+        <div class="main-content"><p><span>Na Coffee & Code, </span> aliamos a lógica do desenvolvimento com o calor humano de uma boa conversa. Criamos sistemas, sites e soluções digitais sob medida, com foco em desempenho, usabilidade e simplicidade.</p>
+        </div>
+      </section>
+      <section class="code-home">
+        <div class="code-content">
+          <h2 class="code-title"><span>CÓDIGO</span> FEITO PARA VOCÊ</h2>
+          <div class="code-text"><p>Cada linha do nosso código é pensada para atender às necessidades específicas do seu projeto, garantindo performance e escalabilidade sem perder a identidade da sua marca.</p>
+          </div>
+          
+
+
+
+        </div>
+        <div class="humor">
+            <img id="humor" src="public/imgs/humor_e_piadas.png" alt="" />
+          </div>
+      </section>
+      <section class="team-home">
+        <div class="team-content"></div>
+      </section>
+    </main>
+
+
   );
 }
 

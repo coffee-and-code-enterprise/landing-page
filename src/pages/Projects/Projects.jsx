@@ -1,31 +1,35 @@
+// Dependencies
+import { Link } from 'react-router-dom';
+
+// Stylesheet
 import './Projects.css'
 
 function Projects() {
 	const projects = [
 		{
 			id: 1,
-			title: "E-commerce Plataform",
+			title: "MakeAQuestion",
 			description:
-				"Plataforma de e-commerce completa com sistema de pagamentos integrado, carrinho de compras e painel administrativo.",
-			image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-			link: "#",
+				"Rede social focada na resolução de perguntas diversas, podendo ser anônimas ou públicas. Feito por toda a equipe.",
+			image: "/imgs/projects/makeaquestion.jpg",
+			link: "https://ready-tasks-126120.framer.app/",
 		},
 		{
 			id: 2,
-			title: "Sistema de Gestão",
+			title: "The",
 			description:
-				"Sistema de gestão empresarial com módulos de RH, financeiro e estoque, desenvolvido com React e Node.js.",
-			image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80",
-			link: "#",
+				"Um jogo feito com React + Vite e Node.js, ainda não te uma história, mas promete uma gameplay confortável e divertida! Feito pelo Guilherme Bittencourt.",
+			image: "/imgs/projects/thegame.png",
+			link: "https://the-react-orpin.vercel.app/menu",
 		},
 		{
 			id: 3,
-			title: "Aplicativo de Saúde",
+			title: "Bone Armor",
 			description:
-				"Aplicativo web para acompanhamento de saúde com integração a wearables e relatórios personalizados.",
-			image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-			link: "#",
-		},
+				"Um mod de Minecraft feito com java e a API do Mine, ele é sobre a otimização dos ossos no jogo. Feito pelo Vinícius Duarte",
+			image: "/imgs/projects/bonearmor.png",
+			link: "https://github.com/ViniciusDuarte09/bone_armor_minecraft_mod",
+		}
 	];
 
 	return (
@@ -47,9 +51,9 @@ function Projects() {
 									{project.title}
 								</h3>
 								<p>{project.description}</p>
-								<a href={project.link} className="project-link">
+								<Link to={project.link} className="project-link">
 									Ver Projeto →
-								</a>
+								</Link>
 							</div>
 						</div>
 					))}
