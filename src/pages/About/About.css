@@ -1,53 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* --- FONTES GLOBAIS E ESTILOS GERAIS --- */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .section {
-	padding: 5rem 0;
+    padding: 5rem 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Secao heroi */
+.hero-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imgs/backgrounds/fundo_about.png');
+    background-color: #100B1E;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FDF8E4;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #FDF8E4;
+}
+
+.section-title span {
+    color: #34337C;
+}
+
+.scroll-down-arrow {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    color: #FDF8E4;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-20px); }
+    60% { transform: translateY(-10px); }
+}
+
+/* Secao Quem Somos */
+.team-section {
+    background-color: #210F4B;
+    padding: 5rem 0;
+    color: #FDF8E4;
 }
 
 .section-title {
-	text-align: center;
-	font-size: 2.5rem;
-	margin-bottom: 3rem;
-	color: var(--dark-blue);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    color: #FDF8E4;
+    text-transform: uppercase;
 }
 
-.about-content {
-	display: flex;
-	gap: 3rem;
-	align-items: center;
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
 }
 
-.about-text {
-	flex: 1;
+.team-member-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-.about-image {
-	flex: 1;
-	border-radius: 10px;
-	overflow: hidden;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.team-member-row:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
-.about-image img {
-	width: 100%;
-	height: auto;
-	display: block;
+.team-member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
-.mission-vision {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 2rem;
-	margin-top: 3rem;
+.team-member-info {
+    text-align: left;
 }
 
-.card {
-	background-color: white;
-	border-radius: 8px;
-	padding: 2rem;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+.team-member-row:nth-child(even) .team-member-info {
+    text-align: right;
 }
 
-.card-title {
-	font-size: 1.5rem;
-	margin-bottom: 1rem;
-	color: var(--primary-blue);
+.team-member-info h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #FDF8E4;
+    text-transform: uppercase;
+}
+
+.team-member-info p {
+    font-size: 1.1rem;
+    color: #FDF8E4;
+    opacity: 0.8;
+}
+
+/* Secao Historia da Empresa */
+.history-section {
+    background-color: #5C5988;
+    padding: 5rem 0;
+    color: #FDF8E4;
+}
+
+.history-section .section-title {
+    text-align: left;
+    margin-bottom: 2rem;
+    color: #FDF8E4;
+}
+
+.history-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.history-text {
+    flex: 1;
+    min-width: 300px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #FDF8E4;
+}
+
+.history-image {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.history-image img {
+    width: 100%;
+    display: block;
 }

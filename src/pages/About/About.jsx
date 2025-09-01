@@ -1,69 +1,94 @@
-import './About.css'
+import './About.css';
+
+const teamMembers = [
+    {
+        name: "GUILHERME BITTENCOURT",
+        role: "Programador FullStack",
+        
+        imageUrl: "/imgs/people/guilherme_assis_bittencourt_drummond.png"
+    },
+    {
+        name: "EMANUEL MAIA",
+        role: "Programador FullStack",
+       
+        imageUrl: "/imgs/people/emanuel_maia.png"
+    },
+    {
+        name: "VINÍCIUS SANTIAGO",
+        role: "Programador FullStack",
+        
+        imageUrl: "/imgs/people/vinicius_santiago.png"
+    },
+    {
+        name: "GUSTAVO HENRIQUE",
+        role: "Programador FullStack",
+        
+        imageUrl: "/imgs/people/gustavo_henrique.png"
+    }
+];
 
 function About() {
-	return (
-		<section id="about" className="section">
-			<div className="container">
-				<h2 className="section-title">Sobre Nós</h2>
+    const scrollToNextSection = () => {
+        const nextSection = document.getElementById('quem-somos');
+        if (nextSection) {
+            nextSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
-				<div className="about-content">
-					<div className="about-text">
-						<p>
-							A Coffee&Code é uma empresa especializada em
-							desenvolvimento de aplicações web, fundada em 2015
-							com o objetivo de transformar ideias em soluções
-							digitais eficientes.
-						</p>
-						<p>
-							Nossa equipe é composta por desenvolvedores
-							experientes, designers criativos e especialistas em
-							UX que trabalham juntos para entregar produtos de
-							qualidade.
-						</p>
-					</div>
+    return (
+        <>
+            <section className="hero-section">
+                <h1 className="hero-title">
+                    CONHEÇA UM POUCO SOBRE QUEM SOMOS E O QUE FAZEMOS
+                </h1>
+                <div className="scroll-down-arrow" onClick={scrollToNextSection}>
+                    &#8595;
+                </div>
+            </section>
 
-					<div className="about-image">
-						<img
-							src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-							alt="Equipe Coffee&Code"
-						/>
-					</div>
-				</div>
+            <section id="quem-somos" className="team-section">
+                <div className="container">
+                    <h2 className="section-title">QUEM <span>SOMOS</span></h2>
+                    <div className="team-list">
+                        {teamMembers.map((member, index) => (
+                            <div className="team-member-row" key={index}>
+                                <img src={member.imageUrl} alt={member.name} className="team-member-image" />
+                                <div className="team-member-info">
+                                    <h3>{member.name}</h3>
+                                    <p>{member.role}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
-				<div className="mission-vision">
-					<div className="card">
-						<h3 className="card-title">Missão</h3>
-						<p>
-							Desenvolver soluções tecnológicas inovadoras que
-							resolvam problemas reais e agreguem valor aos nossos
-							clientes, através de um atendimento personalizado e
-							de excelência técnica.
-						</p>
-					</div>
-
-					<div className="card">
-						<h3 className="card-title">Visão</h3>
-						<p>
-							Ser reconhecida como referência em desenvolvimento
-							web, destacando-nos pela qualidade de nossos
-							produtos e pelo relacionamento próximo com nossos
-							clientes.
-						</p>
-					</div>
-
-					<div className="card">
-						<h3 className="card-title">Valores</h3>
-						<p>
-							Inovação, Transparência, Qualidade, Comprometimento
-							e Trabalho em Equipe. Acreditamos que esses valores
-							são a base para construir relacionamentos
-							duradouros.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-	);
+            <section id="historia" className="history-section">
+                <div className="container">
+                    <h2 className="section-title">HISTÓRIA DA EMPRESA</h2>
+                    <div className="history-content">
+                        <div className="history-text">
+                            <p>
+                                Essa empresa surgiu como resultado de um dos
+                                projetos integradores - Senac Minas. Prontamente,
+                                nos organizamos em grupo, e como café, tivemos a
+                                ideia de criar um espaço acolhedor, porém eficiente,
+                                para a criação e desenvolvimento de sistemas web.
+                                Portanto, com uma equipe bem humorada, estamos
+                                mais do que prontos para implementar seu sistema!
+                            </p>
+                        </div>
+                        <div className="history-image">
+                            <img
+                                src="imgs/historia_da_empresa.png"
+                                alt="Diagrama da Empresa"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    );
 }
 
 export default About;
