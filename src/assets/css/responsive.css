@@ -32,8 +32,4 @@
 	.about-content {
 		flex-direction: column;
 	}
-
-	.contact-container {
-		flex-direction: column;
-	}
 }
