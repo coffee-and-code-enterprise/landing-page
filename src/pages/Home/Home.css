@@ -84,11 +84,11 @@
   height: 70vh;
 }
 
-h2 {
+.main-container h2 {
   color: #fdf8e4;
 }
 
-p {
+.main-container p {
   color: #fdf8e4;
   font-size: 24px;
 }

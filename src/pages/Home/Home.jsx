@@ -4,7 +4,7 @@ import "./Home.css";
 
 function Home() {
   return (
-    <main>
+    <main className="main-container">
       <section id="home" className="hero">
         <div className="container">
           <h1 className="hero-title">DESENVOLVEMOS SOLUÇÕES SOB MEDIDA, COM A
