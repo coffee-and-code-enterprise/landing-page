@@ -1,13 +1,15 @@
 .hero {
-  padding: 9rem 0 4rem;
+  display: flex;
+  align-items: center;
   background: url("/imgs/backgrounds/fundo_de_cafe.jpg") no-repeat center center/cover;
   text-align: center;
   height: 90vh;
+  position: relative;
 }
 
 .hero-title {
-  font-size: 1.5rem;
-  color: #C6AC8F;
+  font-size: 2rem;
+  color: #fdf8e4;
 }
 
 .hero-subtitle {
@@ -32,3 +34,54 @@
   width: 9%;
   height: 5%;
 }
+
+.hero-title span {
+ color: #34337c;
+    
+
+}
+
+/* Seta */
+    .scroll-down {
+      font-size: 60px;
+      animation: bounce 1.5s infinite;
+      color: #fdf8e4;
+      position: absolute;
+      bottom: 0;
+      margin-left: 700px;
+    }
+
+    .main-content span {
+        color: #34337c;
+    }
+
+    .main-content {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+
+    }
+    
+    .main-home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+        background-color: #100b1e;
+        height: 70vh;
+    }
+
+    h2 {
+      color: #fdf8e4;
+    }
+    
+    p {
+      color: #fdf8e4;
+      font-size: 18px;
+    }
+
+
+
+
+    
+
