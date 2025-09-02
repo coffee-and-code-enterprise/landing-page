@@ -10,11 +10,11 @@ function Home() {
           <h1 className="hero-title">DESENVOLVEMOS SOLUÇÕES SOB MEDIDA, COM A
             <span> EFICIÊNCIA DO CÓDIGO </span>
             E O CONFORTO DE UMA BOA XÍCARA DE CAFÉ</h1>
-          <div><a class="scroll-down" href="#hero">⌄</a></div>
+          <div><a class="scroll-down" href="#next-section">⌄</ a></div>
         </div>
 
       </section>
-      <section class="main-home">
+      <section id="next-section" class="main-home">
         <div class="main-content">
           <br />
           <h2>TECNOLOGIA QUE FUNCIONA, <span>EXPERIÊNCIA QUE ENCANTA</span> </h2>
