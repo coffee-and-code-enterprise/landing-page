@@ -52,6 +52,17 @@
 	font-size: 1.5rem;
 }
 
-.cta-button{
+.ctc-button{
 	background-color: darkblue;
+	color: #FDF8E4;
+	padding: 0.8rem 2rem;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: background-color 0.3s;
+}
+
+.ctc-button:hover {
+	background-color: rgb(2, 2, 184);
+	cursor: pointer;
 }
