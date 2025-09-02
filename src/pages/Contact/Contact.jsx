@@ -78,7 +78,7 @@
 
               <button
                 type="submit"
-                className="cta-button"
+                className="ctc-button"
                 style={{ width: "100%"}}>
                 Enviar Mensagem
               </button>
