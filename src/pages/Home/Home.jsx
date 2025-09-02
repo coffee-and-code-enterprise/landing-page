@@ -10,7 +10,7 @@ function Home() {
           <h1 className="hero-title">DESENVOLVEMOS SOLUÇÕES SOB MEDIDA, COM A
             <span> EFICIÊNCIA DO CÓDIGO </span>
             E O CONFORTO DE UMA BOA XÍCARA DE CAFÉ</h1>
-          <div><a class="scroll-down" href="">⌄</a></div>
+          <div><a class="scroll-down" href="#hero">⌄</a></div>
         </div>
 
       </section>
