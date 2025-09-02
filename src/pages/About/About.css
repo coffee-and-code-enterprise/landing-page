@@ -43,7 +43,7 @@ body {
 
 .scroll-down-arrow {
     font-size: 2.5rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
     cursor: pointer;
     animation: bounce 2s infinite;
     color: #FDF8E4;
@@ -67,7 +67,6 @@ body {
     font-size: 2.5rem;
     margin-bottom: 4rem;
     font-weight: 700;
-    color: #FDF8E4;
     text-transform: uppercase;
 }
 
